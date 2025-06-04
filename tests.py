@@ -26,7 +26,6 @@ json_handler = logging.StreamHandler(log_buffer)
 logger = logging.getLogger("test")
 logger.addHandler(json_handler)
 logger.setLevel(logging.DEBUG)
-# This should be logger, not logging or use `type: ignore` instead
 logger.propagate = False
 
 DATETIME = datetime(2015, 9, 1, 6, 9, 42, 797203)
